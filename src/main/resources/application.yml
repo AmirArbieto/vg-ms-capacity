@@ -1,0 +1,35 @@
+# External Services
+server:
+    port: ${SERVER_PORT:8089}
+
+# spring boot configurations
+spring:
+    application:
+        name: vg.ms.capacity
+    data:
+        mongodb:
+            uri: mongodb+srv://gabrielgutierrezq:3mbmCx8Gx6hrRKHY@as221s5prs2.1e7z9.mongodb.net/AS221S5PRS2?retryWrites=true&w=majority&appName=AS221S5PRS2
+
+# Microservice health meter
+management:
+  endpoint:
+    health:
+      show-details: always
+
+# Empoit de actuator  
+
+api:
+  version: api/v1
+
+# Swagger
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /api/capacity
+    
+# External services
+services:
+    competency:
+        url: https://busy-sallyann-vallegrandeprs2-7c9b091a.koyeb.app/common/api/v1/competencies
+
