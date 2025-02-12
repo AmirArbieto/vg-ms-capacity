@@ -8,7 +8,7 @@ WORKDIR /app
 COPY target/vg-ms-capacity-0.0.1-SNAPSHOT.jar app.jar
 
 #Expose the port
-EXPOSE 8080
+EXPOSE 8089
 
 #Specify the command to run on container start
 CMD ["java", "-jar", "app.jar"]
